@@ -4,172 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-h1{
-    color:blue;
-}
-table{
-    text-align: left;
-}
-input,
-textarea
-{ 
-  width: 98.7%;
-  vertical-align: middle;
-
-}
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
-}
-
-input[type="submit"]{
-  display: block;
-  width: fit-content;
-  margin: 1em auto;
-  height: 1.5em;
-  font-size: 1rem;
-  background-color: #b1b1be;
-  min-width: 30px;
-}
-td{
-    text-align: right;
-}
-
-    </style>
+    
 </head>
 <body>
     <form action="https://www.ethnus.com">
-    <h1><center>Registration Form</center></h1>
-    <center>
-    <table border="1" bordercolor="#000000"  cellspacing="0"  width="50%">
+    <h1 style="color:blue"><center>Registration form</center></h1>
+    <center><table border="1" bordercolor="#000000"  cellspacing="0" >
         <tr>
-            <th width="20%">Firstname </th>
-            <th>
-                <input type="text" maxlength="50" minlength="2" required/>
-
-            </th>
-            
+            <td><center><b>First Name</b></center></td>
+            <td><label for="fn"></label>
+                <input type="text" name="fn" size="70" required></td>
         </tr>
         <tr>
-            <th>Lastname</th>
-            <th>
-                <input type="text" maxlength="50" minlength="2" />
-
-            </th>
-            
+            <td><center><b>Last Name</b></center></td>
+            <td><label for="g"></label>
+                <input type="text" name="g" size="70" required></td>
         </tr>
         <tr>
-            <th>Email</th>
-            <th>
-                <input type="email" required/>
-
-            </th>
-
+            <td><center><b>Email</b></center></td>
+            <td><label for="k"></label>
+                <input type="text" name="k" size="70" required></td>
         </tr>
         <tr>
-            <th>Password</th>
-            <th>
-                <input type="password" required/>
-
-            </th>
-            
+            <td><center><b>Password</b></center></td>
+            <td><label for="l"></label>
+                <input type="password" name="l" size="70" required></td>
         </tr>
         <tr>
-            <th>Re-enter password</th>
-            <th>
-                <input type="password" required/>
-
-            </th>
-            
+            <td><center><b>Re-enter Password</b></center></td>
+            <td><label for="m"></label>
+                <input type="password" name="m" size="70" required></td>
         </tr>
         <tr>
-            <th rowspan="2">Gender:</th>
-            <th>
-                <label for="Female"><input id="Female" type="radio" name="account-type" class="inline"/> Female</label>
-
-            </th>
+            <td rowspan="2"><center><b>Gender:</b></center></td>
+            <td><input type="radio" name="gender" /> Male</td>
         </tr>
         <tr>
-            <th>
-                <label for="Male"><input id="Male" type="radio" name="account-type" class="inline"/> Male</label>
-            </th>
+            <td><input type="radio" name="gender" /> Female</td>
         </tr>
-        <tr>
-            <th>Age:</th>
-            <th>
-                <input type="number" max="30" min="10" width="50%" required/>
- 
-            </th>
-            
-        </tr>
-        <tr>
-            <th>Phone Number</th>
-            <th>
-                <input type="text"required />
-            </th>
-            
-        </tr>
-        <tr>
-            <th>Address</th>
-            <th>
-                <textarea id="bio" name="bio" rows="6" required></textarea>
-            </th>
-            
-        </tr>
-        <tr>
-            <th>State</th>
-            <th>
-                <input type="text" maxlength="50" minlength="2" required/>
-
-            </th>
-
-        </tr>
-        <tr>
-            <th>Country</th>
-            <th>
-                <select>
-                    <option>Choose Your country</option>
-                    <option>India</option>
-                    <option>US</option>
-                    <option>Dubai</option>
-                    <option>Singapore</option>
-                    <option>Russia</option>
-                </select> 
-            </th>
-            
-        </tr>
-        <tr>
-            <th>Languages Known</th>
-            <th>
-                <input type="checkbox" class="inline" />English
+        <TR>
+            <td><b><center>Age:</center></b></td>
+            <td><label for="o"></label>
+                <input type="number" name="o" style="width: 496px;" required></td>
+        </TR>
+        <TR>
+            <td><b><center>Phone Number</center></b></td>
+            <td><label for="p"></label>
+                <input type="Text" name="p" size="70" required></td>
+        </TR>
+        <TR>
+            <td><b><center>Address</center></b></td>
+            <td><textarea name="" id="" cols="66" rows="6"></textarea></textarea>
+        </TR>
+        <TR>
+            <td><b><center>State</center></b></td>
+            <td><label for="r"></label>
+                <input type="Text" name="r" size="70" required></td>
+        </TR>
+        <TR>
+            <td><b><center>Country</center></b></td>
+            <td><select>
+                <option>Choose Your country</option>
+                <option>India</option>
+                <option>US</option>
+                <option>Dubai</option>
+                <option>Singapore</option>
+                <option>Russia</option>
+            </select> </td>
+        </TR>
+        <TR>
+            <td><b><center>Languages known</center></b></td>
+            <td><input type="checkbox" class="inline" />English
                 <cite>&nbsp</cite>
                 <input type="checkbox" class="inline"/>Kannada
                 <cite>&nbsp</cite>
                 <input type="checkbox" class="inline"/>Hindi
                 <cite>&nbsp</cite>
                 <input type="checkbox" class="inline"/>Telugu
-            </th>
-            
-        </tr>
-        <tr>
-            <th colspan="2">
-                <input type="checkbox" class="inline"/>Hereby I declare all the given details are true     
-            </th>
-        </tr>
-        <tr>
-            <td colspan="2">
-                
-                Log in to <a href="http://www.ethnus.com">Ethnus </a>website
-                
             </td>
-            
+        </TR>
+        <tr>
+            <td colspan="2"><input type="checkbox" class="inline" />Hereby I declare all the given details are true</td>
         </tr>
-
+        <tr>
+           <td style="text-align:right;" colspan="2">Log in to <a href="http://www.ethnus.com">Ethnus </a>website</td> 
+        </tr>
+    </center>
     </table>
-    <br/>
-    <input type="submit" value="Register"/>
+    <br />
+    <center><input type="submit" value="Register"/></center>
 </center>
 </form>
 </body>
