@@ -4,57 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        td
-        {
-            border-right: 100px solid white;
-        }
-    </style>
 </head>
 <body>
-
     <table>
+        <tr>
+            <td style="border-right: 116px solid rgb(255, 255, 255);">Full Name:</td>
+            <td>
+                <label for="fn"></label>
+                <input type="text" name="fn" placeholder="Vincent Maverick Durano" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td>
+                <label for="k"></label>
+                <input type="text" name="k" placeholder="Vinz" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <label for="j"></label>
+                <input type="Password" name="k" placeholder="*********" required>
+            </td>
+        </tr>
 
-    <tr>
-        <td><label for="fn">Full Name:</label></td>
-        <td><input type="text" placeholder="Vincent Maverick Durano" name="fn"></td>
-    </tr>
-
-    <tr>
-        <td><label for="un">Username:</label></td>
-        <td><input type="text" placeholder="Vinz" name="un"></td>
-    </tr>
-
-    <tr>
-        <td><label for="pass">Password:</label></td>
-        <td><input type="password" placeholder="****" name="fn"></td>
-    </tr>
-
-    <tr>
-        <td><label for=repass">Re Password:</label></td>
-        <td><input type="password" placeholder="****" name="repass"></td>
-    </tr>
-
-    <tr>
-        <td><label for="add">Address:</label></td>
-        <td><input type="text" placeholder="Cebu, Philippines" name="add"></td>
-    </tr>
-
-    <tr>
-        <td><label for="ag">Age:</label></td>
-        <td><input type="number" placeholder="22" name="ag"></td>
-    </tr>
-
-    <tr>
-        <td><label for="gen">Gender:</label></td>
-        <td><select>
-        <option value="m">Male</option>
-        <option value="f">Female</option>
-    </select></td>
-    </tr>
+        <tr>
+            <td>Re Password:</td>
+            <td>
+                <label for="l"></label>
+                <input type="Password" name="l" placeholder="*********" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Address:</td>
+            <td>
+                <label for="l"></label>
+                <input type="text" name="l" placeholder="Cebu, Philippines" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td>
+            <label for="age"></label>
+            <input type="number" name="age" value="22">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+            <select>
+                <option value="Male">Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Save"/>
+            </td>
+        </tr>
 
     </table>
-    <input type="submit" value="Save">
-
 </body>
 </html>
